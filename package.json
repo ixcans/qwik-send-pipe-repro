@@ -1,0 +1,17 @@
+{
+	"name": "send-pipe-repro",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "vite build && vite build -c adapters/bun/vite.config.ts",
+		"start": "bun run dist-server/entry.bun-server.js"
+	},
+	"dependencies": {
+		"@qwik.dev/core": "2.0.0-rc.4",
+		"@qwik.dev/router": "2.0.0-rc.4"
+	},
+	"devDependencies": {
+		"typescript": "^7.0.2",
+		"vite": "^8.3.6"
+	}
+}
